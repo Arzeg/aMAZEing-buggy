@@ -1,0 +1,5 @@
+Dateien müssen noch geordnet werden
+
+ordner rpi_ws281x noch zum repo adden
+
+alles in ein ordentliches Github repo
