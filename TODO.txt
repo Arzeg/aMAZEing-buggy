@@ -1,5 +1,3 @@
 Dateien müssen noch geordnet werden
 
-ordner rpi_ws281x noch zum repo adden -> pfad in autoscript für led ändern
-
 alles in ein ordentliches Github repo
