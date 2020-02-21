@@ -4,7 +4,7 @@
 case "$1" in
     start)
  #Aktion wenn start uebergeben wird
-        sudo PYTHONPATH=".:/home/pi/rpi_ws281x/python/build/lib.linux-armv7l-2.7" python /home/pi/rpi_ws281x/python/examples/unterbodenbeleuchtung.py -c
+        sudo PYTHONPATH=".:/home/pi/Desktop/aMAZEing-buggy/rpi_ws281x/python/build/lib.linux-armv7l-2.7" python /home/pi/Desktop/aMAZEing-buggy/rpi_ws281x/python/examples/unterbodenbeleuchtung.py -c
         ;;
     stop)
  #Aktion wenn stop uebergeben wird
