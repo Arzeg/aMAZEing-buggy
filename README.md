@@ -1,5 +1,5 @@
 # aMAZEing-buggy
-Der aMAZEing-buggy ist ein selbstgebautes Auto welches mittels Ultraschallsensoren durch ein Labyrinth fährt.
+Der aMAZEing-buggy ist ein selbstgebautes Auto (mit unterbodenbeleuchtung!) welches mittels Ultraschallsensoren durch ein Labyrinth fährt.
 
 # Konfiguration
 Empfohlen, aber nicht Notwendig ist ein frisch installiertes Raspbian auf ihrem Pi.
