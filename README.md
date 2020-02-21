@@ -17,4 +17,4 @@ Bei mir liegt der Ordner im verzeichnis <code>~/Desktop</code> falls sie diesen 
 Das Script unterbodenbeleuchtung.py (welches sich nur leicht von dem strandtest.py) unterscheidet wird noch in den examples ordner der rpi_ws281x library geschoben.
 <code>mv unterbodenbeleuchtung.py ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/examples/</code>
 
-Damit ihre LEDs auch beim Starten des Pi's direkt mit starten, müssen sie das script in den autostart Ordner legen. Dafür gehen sie in das verzeichnis wo sich das Script led befindet und geben anschließend<code>sudo mv led_autostart.sh /etc/init.d/</code>ein.
+Damit ihre LEDs auch beim Starten des Pi's direkt mit starten, müssen sie das Script in den autostart Ordner legen. Dafür gehen sie in das Verzeichnis wo sich das Script led_autostart.sh befindet und geben anschließend<code>sudo mv led_autostart.sh /etc/init.d/</code>ein.
