@@ -1,5 +1,3 @@
-# RaspberryPi Grundkonfiguration
-
 Dateien müssen noch geordnet werden
 
 alles in ein ordentliches Github repo
