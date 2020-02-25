@@ -14,8 +14,8 @@ GPIO.setmode(GPIO.BCM)  # bestimmt den GPIO bin innerhalb des boards nicht die K
 
 # GPIO Pins zuweisen
 GPIO_TRIGGER = 21
-GPIO_ECHO_V = 17
-GPIO_ECHO_L = 18
+GPIO_ECHO_V = 22
+GPIO_ECHO_L = 23
 GPIO_ECHO_R = 19
 GPIO_ECHO_H = 20
 motor_L = (7, 8)
