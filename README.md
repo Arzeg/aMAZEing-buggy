@@ -1,8 +1,11 @@
-# aMAZEing-buggy
+# aMAZEing-buggy        (IN BEARBEITUNG)
 Der aMAZEing-buggy ist ein selbstgebautes Auto (mit unterbodenbeleuchtung!) welches mittels Ultraschallsensoren durch ein Labyrinth fährt.
 
 # Konfiguration
 Empfohlen, aber nicht Notwendig ist ein frisch installiertes Raspbian auf ihrem Pi.
+In dem Projekt wurde die minimale desktop variante von der version Buster verwendet. Wenn sie ihren Pi an einen Bildschirm sowie Maus und Tastatur Angeschlossen haben, starten sie ihn. Sobald sie den desktop sehen, erscheint ein Wilkommens Fenster, wo sie den anweisungen folgen.
+Nachdem ihr Pi neugestartet hat, gehen sie unter Start -> Einstellungen -> RaspberryPi Konfiguration -> Schnittstellen
+dort setzen sie den Punkt für SSH auf Aktiviert. Wenn die IP-Adresse des Pi bekannt ist können sie sich nun Per Fernzugriff in den Pi einloggen. 
 Anschließend sollten sie ihren Pi mittels<code>sudo apt-get update && sudo apt-get upgrade -y</code>(was einige minuten in anspruch nehmen kann) auf den aktuellsten stand bringen.
 
 Nun können sie das Github Repo mithilfe von <code>git clone https://github.com/Arzeg/aMAZEing-buggy/</code> kopieren.
@@ -18,3 +21,9 @@ Das Script unterbodenbeleuchtung.py (welches sich nur leicht von dem strandtest.
 <code>mv unterbodenbeleuchtung.py ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/examples/</code>
 
 Damit ihre LEDs auch beim Starten des Pi's direkt mit starten, müssen sie das Script in den autostart Ordner legen. Dafür gehen sie in das Verzeichnis wo sich das Script led_autostart.sh befindet und geben anschließend<code>sudo mv led_autostart.sh /etc/init.d/</code>ein.
+
+
+
+
+
+
