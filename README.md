@@ -24,7 +24,8 @@ Damit ihre LEDs auch beim Starten des Pi's direkt mit starten, müssen sie das S
 Außerdem muss das bash script ausführbar gemacht und als default wert beim starten gesetzt werden.
 
 <code>sudo chmod 755 /etc/init.d/led_autostart.sh</code>
-<code>sudo update-rc.d /etc/init.d/led_autostart.sh defaults</code>
+
+<code>sudo update-rc.d led_autostart.sh defaults</code>
 
 
 
