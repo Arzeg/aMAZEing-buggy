@@ -27,6 +27,45 @@ Außerdem muss das bash script ausführbar gemacht und als default wert beim sta
 
 <code>sudo update-rc.d led_autostart.sh defaults</code>
 
+Nun installieren wir die benötigten Pakete
+<code>sudo apt-get install gcc make build-essential python-dev git scons swig</code>
+
+Die Audioausgabe muss deaktiviert werden, dafür muss folgende Datei bearbeitet werden
+<code>sudo nano /etc/modprobe.d/snd-blacklist.conf</code>
+
+Es wird folgende Zeile hinzugefügt
+<code>blacklist snd_bcm2835</code>
+Die Datei wird mit STRG+O gespeicher und mit STRG+X geschlossen
+
+Außerdem müssen wir die Konfigurationsdatei bearbeiten
+<code>sudo nano /boot/config.txt</code>
+
+weiter unten befindet sich die folgende Zeile:
+<code># Enable audio (loads snd_bcm2835)
+dtparam=audio=on</code>
+
+hier muss die untere zeile mit # auskommentiert werden
+
+Dann Starten wir den Pi neu
+<code>sudo reboot</code>
 
 
+In diesem Verzeichnis sind nun einerseits einige C Dateien enthalten, welche einfach kompiliert werden können. Damit wir diese in Python verwenden können, müssen wir sie kompilieren:
+<code>
+
+cd ~/Desktop/aMAZEing-buggy/rpi_ws281x/
+
+sudo scons
+
+</code>
+
+
+
+Nun führen wir die Installation durch
+<code>
+
+sudo python ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/setup.py build
+sudo python ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/setup.py install
+
+</code>
 
