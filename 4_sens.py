@@ -1,3 +1,8 @@
+"""
+Dieser Code ist zum Testen der Ultraschallsensoren genutzt worden
+Im try Block weiter unten sind die Ausgaben der jeweiligen Richtungen zu sehen.
+"""
+
 # Bibs einbinden
 import RPi.GPIO as GPIO
 import time
