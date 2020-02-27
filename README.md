@@ -80,4 +80,4 @@ Nun müssen wir den dienst noch automatisch starten sobal der Pi hochgefahren is
 
 und fügen vor dem exit 0 noch folgendes ein:
 
-<code>/etc/init.d/led_autostart start</code>
+<code>/etc/init.d/led_autostart.sh start</code>     // noch ändern zu /usr/local/bin/script.sh
