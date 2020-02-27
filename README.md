@@ -64,8 +64,20 @@ sudo scons
 Nun führen wir die Installation durch
 <code>
 
-sudo python ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/setup.py build
-sudo python ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/setup.py install
+cd ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/
+
+sudo python setup.py build
+
+sudo python setup.py install
 
 </code>
 
+<code>sudo update-rc.d led_autostart.sh defaults</code>
+
+Nun müssen wir den dienst noch automatisch starten sobal der Pi hochgefahren ist, dazu ändern wir folgende datei
+
+<code>sudo nano /etc/rc.local</code>
+
+und fügen vor dem exit 0 noch folgendes ein:
+
+<code>/etc/init.d/led_autostart start</code>
