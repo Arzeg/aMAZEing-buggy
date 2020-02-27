@@ -65,4 +65,29 @@ sudo python setup.py build
 sudo python setup.py install
 ```
 
-Nun sollten die Led's automatisch starten und der Buggy fahren
+Nun sollten die Led's automatisch starten
+
+## Sensoren und Fahren
+
+Wechseln sie in das verzeichnis der Skripte <code>cd ~/Desktop/aMAZEing-buggy/</code>
+
+- car.py:
+
+Ist nur zum testen ob die Motoren in die richtige Richtung laufen
+
+- 4_sens.py:
+
+Dient der ansteuerung der 4 Sensoren zur Funktionsüberprüfung
+
+- algo.py:
+
+Dieses Skript enthält verschiedene Algorithmen die ausgewählt werden können, wie sich der Buggy im Labyrinth verhält.
+
+
+
+### skripte ausführen:
+```bash
+python3 car.py
+python3 4_sens.py
+python3 algo.py
+```
