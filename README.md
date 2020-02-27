@@ -60,10 +60,9 @@ sudo scons
 
 Nun führen wir die Installation durch
 ```bash
-
 cd ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/
-
 sudo python setup.py build
-
 sudo python setup.py install
 ```
+
+Nun sollten die Led's automatisch starten und der Buggy fahren
