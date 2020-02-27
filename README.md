@@ -1,4 +1,4 @@
-# aMAZEing-buggy        (IN BEARBEITUNG)
+# aMAZEing-buggy
 Der aMAZEing-buggy ist ein selbstgebautes Auto (mit unterbodenbeleuchtung!) welches mittels Ultraschallsensoren durch ein Labyrinth fährt.
 
 ## Konfiguration
