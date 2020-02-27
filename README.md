@@ -20,12 +20,10 @@ Bei mir liegt der Ordner im verzeichnis <code>~/Desktop</code> falls sie diesen 
 Das Script unterbodenbeleuchtung.py (welches sich nur leicht von dem strandtest.py) unterscheidet wird noch in den examples ordner der rpi_ws281x library geschoben.
 <code>mv unterbodenbeleuchtung.py ~/Desktop/aMAZEing-buggy/rpi_ws281x/python/examples/</code>
 
-Damit ihre LEDs auch beim Starten des Pi's direkt mit starten, müssen sie das Script in den autostart Ordner legen. Dafür gehen sie in das Verzeichnis wo sich das Script led_autostart.sh befindet und geben anschließend<code>sudo mv led_autostart.sh /etc/init.d/</code>ein.
+Damit ihre LEDs auch beim Starten des Pi's direkt mit starten, müssen sie das Script in den autostart Ordner legen. Dafür gehen sie in das Verzeichnis wo sich das Script led_autostart.sh befindet und geben anschließend<code>sudo mv led_autostart.sh /usr/local/bin/</code>ein.
 Außerdem muss das bash script ausführbar gemacht und als default wert beim starten gesetzt werden.
 
-<code>sudo chmod 755 /etc/init.d/led_autostart.sh</code>
-
-<code>sudo update-rc.d led_autostart.sh defaults</code>
+<code>sudo chmod 755 /usr/local/bin/led_autostart.sh</code>
 
 Nun installieren wir die benötigten Pakete
 <code>sudo apt-get install gcc make build-essential python-dev git scons swig</code>
@@ -42,6 +40,7 @@ Außerdem müssen wir die Konfigurationsdatei bearbeiten
 
 weiter unten befindet sich die folgende Zeile:
 <code># Enable audio (loads snd_bcm2835)
+
 dtparam=audio=on</code>
 
 hier muss die untere zeile mit # auskommentiert werden
@@ -72,12 +71,10 @@ sudo python setup.py install
 
 </code>
 
-<code>sudo update-rc.d led_autostart.sh defaults</code>
-
-Nun müssen wir den dienst noch automatisch starten sobal der Pi hochgefahren ist, dazu ändern wir folgende datei
+Nun müssen wir den das script noch automatisch starten sobal der Pi hochgefahren ist, dazu ändern wir folgende datei
 
 <code>sudo nano /etc/rc.local</code>
 
 und fügen vor dem exit 0 noch folgendes ein:
 
-<code>/etc/init.d/led_autostart.sh start</code>     // noch ändern zu /usr/local/bin/script.sh
+<code>/usr/local/bin/led_autostart.sh start</code>
